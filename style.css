@@ -1,3 +1,35 @@
-h1, h2 {
+h1,
+h2 {
   font-family: Lato;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-animation {
+  animation: hide 0.45s ease-in-out forwards;
+}
+
+.show-animation {
+  animation: show 0.45s ease-in-out forwards;
+}
+
+@keyframes hide {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+    /* display: none; */
+  }
+}
+@keyframes show {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+    /* display: none; */
+  }
 }
